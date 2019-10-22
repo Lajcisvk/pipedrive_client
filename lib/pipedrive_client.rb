@@ -84,6 +84,9 @@ module Pipedrive
 
     def api_key
       return @api_key if @api_key
+
+      return @api_key = ENV['pipedrive_api_key'] if ENV['pipedrive_api_key']
+
       @api_key = YAML.load(
         File.read(
           File.expand_path('pipedrive_key.yml', 'config')

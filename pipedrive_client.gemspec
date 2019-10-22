@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name        = 'pipedrive_client'
-  spec.version     = '0.0.1'
-  spec.date        = '2017-09-06'
+  spec.version     = '0.0.2'
+  spec.date        = '2019-10-22'
   spec.summary     = 'Pipedrive client'
   spec.description = 'Gem for communicating with pipedrive API'
   spec.authors     = ['Jan Mosat']
