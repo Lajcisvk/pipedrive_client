@@ -1,12 +1,10 @@
 require 'typhoeus'
 require 'json'
 require 'yaml'
-require 'helpers/pipedrive_helpers'
+require 'active_support'
 
 module Pipedrive
   class Client
-    using PipedriveHelpers
-
     PIPELINE_HOST = 'https://api.pipedrive.com/v1/'
 
     def initialize(path, parameters = {})
